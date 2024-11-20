@@ -1,0 +1,1883 @@
+/*scroll*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+::selection {
+	background: #895ffc;
+	color: #fff;
+	text-shadow: none;
+}
+
+.container {
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+	display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #dedede;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-image: linear-gradient(#5eba60, #5eba60);
+}
+
+/*body*/
+.overflw {
+	overflow: hidden;
+}
+
+[class^="box-"] {
+	display: none
+}
+
+[class^="box-"].showfirst {
+	display: block
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a:hover {
+	text-decoration: none;
+	-webkit-transition: all 0.4s ease-In-out;
+	-moz-transition: all 0.4s ease-In-out;
+	-o-transition: all 0.4s ease-In-out;
+	transition: all 0.4s ease-In-out;
+}
+
+p {
+	line-height: 1.4;
+}
+.heading{
+	font-weight: 700;
+    font-size: 14px;
+    font-style: italic;
+}
+body {
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: "Poppins", sans-serif;
+}
+
+
+/*padding*/
+.pad0 {
+	padding: 0;
+}
+
+.padL {
+	padding-left: 0;
+}
+
+.padR {
+	padding-right: 0;
+}
+
+.pad-top {
+	padding-top: 60px;
+}
+
+.pad-btm {
+	padding-bottom: 40px;
+}
+
+/*botton*/
+.btn-a {
+	background-color: #5eba60;
+	border: 2px solid #5eba60;
+	border-radius: 6px;
+	color: white;
+	padding: 20px 40px;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.btn-a:hover {
+	background: transparent;
+	color: #222222;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #F5F5F5;
+}
+
+/*heading*/
+.m1-h h5 {}
+
+.m2-h h5 {}
+
+.m3-h h5 {}
+
+.m4-h h5 {}
+
+.m5-h h5 {}
+
+.m6-h h5 {}
+
+/*paragrape*/
+.p1 p {}
+
+.p2 p {}
+
+.p3 p {}
+
+.p4 p {}
+
+.p5 p {}
+
+
+
+
+:root {
+	--uptownwebsitecolor: #4f008a;
+	--uptownwebsitecolor2: #4f008a;
+	--uptownwebsiteheading: #333;
+	--uptownwebsitered: rgb(224, 82, 16);
+	--uptownwebsiteylw: #f9a03f;
+	--uptownwebsiteylf: #fff;
+	--space-cadet: #1f2041;
+	--sunglow: #ffc857;
+	--dark-cyan: #119da4;
+	--paynes-gray: #19647e;
+	--light-color: #fff;
+	--muted-color: slategray;
+	--dot-color: #ccc;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1d1d1de6 !important;
+    z-index: 2;
+    height:11vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    gap: 3rem;
+    margin: 29px 12px;
+    list-style: none;
+    align-items: center;
+}
+
+/* Menu Items */
+.menu li {
+    display: inline-block;
+    align-items: center !important;
+    margin: 13px 0px;
+}
+
+/* Anchor Tag Underline Effect */
+.menu li a {
+    position: relative;
+}
+
+.menu li a::after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	/* Distance of the line from the text */
+	left: 0;
+	width: 0;
+	/* Initially set width to 0 (line is hidden) */
+	height: 2px;
+	/* Thickness of the line */
+	background-color: var(--uptownwebsitered);
+	/* Line color */
+	transition: width 0.3s ease;
+	/* Transition for smooth effect */
+}
+
+/* On hover, expand the line to 100% */
+.menu li a:hover::after {
+	width: 100%;
+	/* On hover, the line expands to full width */
+}
+
+/* Logo Styling */
+.logo img {
+    width: 63%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 19px 0;
+}
+
+/* Button Styling */
+.btn-a {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 7px 20px;
+    background: var(--uptownwebsitered);
+    border-color: var(--uptownwebsitered) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    gap: 5px;
+}
+
+.hamburger-menu span {
+    width: 100%;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger Animation */
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ============================================= */
+/* HEro Secton */
+/* ============================================= */
+/* Ensure the video covers the full screen */
+.hero .video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.hero {
+	min-height: 100vh;
+	/* Ensure the hero section takes full height of the viewport */
+	position: relative;
+}
+
+/* Video element inside the container */
+.hero .video video {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+/* Dark overlay for the video */
+.hero .video::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	/* Adjust opacity to make the overlay darker */
+	z-index: 1;
+}
+
+/* Style and position the text content */
+.hero-content {
+	position: absolute;
+	top: 40%;
+	left: 7%;
+	color: white;
+	text-align: center;
+	z-index: 1;
+	/* Ensure it sits above the overlay */
+	width: 80%;
+	/* Set the width to 80% to reduce the heading width */
+	padding: 0 20px;
+	/* Optional: Adds padding if the text is too close to the edges */
+}
+
+/* Styling for the heading */
+.hero-content h1 {
+	font-size: 60px;
+	/* Adjusts the font size based on the viewport height */
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	font-family: 'poppins';
+	font-weight: bold;
+	margin: 0;
+	/* Remove default margin */
+	position: relative;
+	/* For absolute positioning of the ::after */
+	display: inline-block;
+	/* Make sure it respects the width */
+}
+
+/* Add horizontal line below the heading */
+.hero-content h1::after {
+	content: "";
+	background-color: var(--uptownwebsitered);
+	height: 4px;
+	width: 40%;
+	display: block;
+	margin: 20px auto;
+	/* Center the line below the heading */
+}
+
+/* Button styles */
+.btn-b {
+	font-weight: 700;
+	font-size: 17px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 1;
+	text-transform: uppercase;
+	border-radius: 7px;
+	display: inline-block;
+	padding: 20px 40px;
+	background-color: var(--uptownwebsitered);
+	color: rgb(255, 255, 255);
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+	/* Add margin between buttons */
+	border: none;
+}
+
+.btn-b:last-child {
+	background: var(--uptownwebsiteylw);
+	/* Color of the second button */
+}
+
+.btn-b:hover {
+	background: var(--uptownwebsiteylf);
+	color: rgb(0, 0, 0);
+}
+
+.sec {
+	margin: 50px;
+}
+
+.sec-hd {
+	color: var(--uptownwebsiteheading);
+	font-weight: bold;
+	text-transform: capitalize;
+	margin: 0px 0px 16px;
+	line-height: 1.1em;
+	font-size: 36px;
+	text-align: center;
+}
+
+.sec p {
+	font-family: Poppins, sans-serif;
+	display: block;
+	font-size: 14px;
+	color: rgb(51, 51, 51);
+	font-weight: 400;
+	line-height: 1.4em;
+	padding-top: 8px;
+	text-transform: capitalize;
+	text-align: center;
+}
+.dots-ul{
+	padding-left: 0 !important;
+}
+ul.dots-ul li {
+	font-size: 14px;
+	color: rgb(23, 23, 23);
+	display: inline-block;
+	width: 49%;
+	padding: 0px 0px 0px 14px;
+	position: relative;
+	margin: 0px 0px 5px;
+}
+
+ul.dots-ul li::before {
+	content: "";
+	width: 6px;
+	height: 6px;
+	background: rgb(5, 46, 143);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	border-radius: 100%;
+	transition: all 0.4s ease 0s;
+}
+
+/* Counter sec */
+#counter-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 8%;
+	padding: 19px 0;
+}
+
+.counter-i {
+	font-size: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.counter-i i {
+	font-size: 42px;
+	color: var(--uptownwebsitered);
+}
+
+.counter-sec {
+	text-align: center;
+	margin: 22px;
+}
+
+.counter-sec h3 {
+	font-size: 36px;
+	font-weight: 700;
+	color: var(--uptownwebsiteheading);
+}
+
+.counter-sec p {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+
+
+/* tabbiung */
+
+.content {
+	display: none;
+	/* Hide all content sections by default */
+	margin-top: 20px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	width: 80%;
+	max-width: 600px;
+}
+
+.list {
+	position: relative;
+}
+
+.list li button {
+	font-size: 14px;
+	color: rgb(148, 148, 148);
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 14px;
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.14);
+	margin: 22px 0px;
+	width: 200px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+}
+
+.list li button.active {
+	color: var(--uptownwebsitered);
+	font-weight: 600;
+}
+
+.list li button.active::after {
+	opacity: 1;
+}
+
+.list li button::after {
+	content: "";
+	width: 7px;
+	height: 7px;
+	background: var(--uptownwebsitered);
+	position: absolute;
+	right: -3px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	border-radius: 100%;
+	opacity: 0;
+	z-index: 1;
+	transition: all 0.4s ease 0s;
+}
+
+
+.corner-image {
+    width: 100% !important;
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    /* margin-left: 115%; */
+    border-radius: 13px;
+    /* right: 100px; */
+    left: 100%;}
+/* Additional responsive adjustments */
+
+
+.tabs-list {
+	text-align: center;
+	display: block;
+}
+
+.tabs-list>li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px 10px;
+	position: relative;
+}
+
+.tabs-list>li>a {
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #898989;
+	padding: 0 0 5px;
+	position: relative;
+	font-weight: normal;
+	font-size: 14px;
+	border: 2px s #898989;
+	font-size: 18px
+}
+
+.tabs-list>li::before {
+	content: "";
+	position: absolute;
+	background: #898989;
+	top: 2px;
+	width: 1px;
+	height: 14px;
+	left: -10px;
+}
+
+.content img {
+	width: 100%;
+}
+
+
+
+/* Portfolio sec */
+
+.web-busniess-ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style: none;
+}
+
+.web-busniess-ul li a {
+	color: var(--uptownwebsiteheading);
+	font-size: 23px;
+	display: flex;
+	justify-content: space-between;
+}
+.portfolio-img{
+	width: 100%!important;
+	height: 450px;
+	margin: 12px 0;
+}
+.portfolio-img img{
+	width: 100% !important;
+	height: 100%;
+}
+.btn-change {
+	width: 170px !important;
+	font-size: 16px;
+	letter-spacing: 0px !important;
+	padding: 20px 9px;
+}
+
+.btn-change:hover {
+	color: var(--uptownwebsitered);
+	background-color: #222222;
+}
+
+#badges-h1 {
+	font-size: 30px !important;
+}
+
+.badges-img {
+	width: 70% !important;
+}
+
+#badges-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.badges{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*   yt sec */
+.sec-03 {
+	position: relative;
+	padding: 0 0 30px;
+	margin: 70px 0;
+}
+
+.sec-yt img {
+	width: 100% !important;
+}
+
+.para-silder h6 {
+	font-size: 16px;
+	color: rgb(138, 151, 163);
+	font-weight: 500;
+}
+
+.para-silder p {
+	font-size: 18px;
+	color: rgb(138, 151, 163);
+	font-weight: 500;
+	white-space: pre-line;
+}
+
+.sec-03 .para-silder {
+	position: relative;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* Pricng-sec */
+
+
+
+/* ------------ Cards ------------*/
+.card {
+	/* height: 50vh; */
+	margin: 12px 0;
+	border-radius: 8px;
+	padding: 40px 10%;
+	box-shadow: 0px 0px 25px -8px hsl(240, 9%, 76%);
+}
+
+.card-title {
+	color: var(--uptownwebsiteylw);
+	font-size: 18px;
+}
+
+.basic-card,
+.master-card {
+	background-color: white;
+	color: rgb(83, 83, 83);
+}
+
+.professional-card {
+	background-image: linear-gradient(to bottom right, var(--uptownwebsiteylw), var(--uptownwebsiteylf));
+	color: white;
+	height: 98%;
+	place-self: center auto;
+}
+
+/* ------------ Buttons Style ------------*/
+.button {
+	/* background-image: linear-gradient(to right,var(--uptownwebsitered), var(--uptownwebsiteylw)); */
+	background-color: var(--uptownwebsiteylw) !important;
+	width: 100%;
+	height: 45px;
+	border: none;
+	border-radius: 5px;
+	color: var(--uptownwebsiteylf) !important;
+	padding: 5px 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 20px 0 25px 0;
+	font-weight: 700;
+	letter-spacing: 1.3px;
+}
+
+.professional-button {
+	background-color: #ffffff;
+	width: 100%;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	color: hsl(237, 63%, 64%);
+	padding: 5px 30px;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 15px;
+	font-weight: 700;
+	letter-spacing: 1.3px;
+}
+
+.pro-btn:hover {
+	border: 1px solid white;
+	background-image: linear-gradient(to right, hsl(236, 78%, 73%), hsl(237, 63%, 64%));
+	color: white;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-image: linear-gradient(to right, hsl(0, 0%, 100%), hsl(0, 0%, 100%));
+	color: hsl(237, 63%, 64%);
+	border: 1px solid hsl(237, 63%, 64%);
+	cursor: pointer;
+}
+
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	height: 20px;
+	bottom: 3px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: linear-gradient(to right, hsl(236, 78%, 73%), hsl(237, 63%, 64%));
+	transition: .4s;
+}
+
+.slider:hover {
+	opacity: 0.5;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 3px;
+	bottom: 2px;
+	background-color: white;
+	transition: .4s;
+}
+
+input:checked+.slider {
+	background-image: linear-gradient(to right, hsl(235, 82%, 80%), hsl(237, 67%, 67%));
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px hsl(237, 63%, 64%);
+}
+
+input:checked+.slider:before {
+	transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.price {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.original-price {
+	text-decoration: line-through;
+	/* Strikethrough for the original price */
+	color: gray;
+	font-size: 18px;
+}
+
+.discount-price {
+	color: var(--uptownwebsiteheading);
+}
+
+.pack-features {
+	max-height: 300px;
+	/* Adjust the height as needed */
+	overflow-y: auto;
+	/* Allows vertical scrolling */
+	list-style-type: none;
+	/* Removes bullet points */
+	padding: 0;
+	margin: 0;
+}
+
+.pack-features li {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	/* Optional, for separating list items */
+}
+
+.pack-features li.first {
+	font-weight: bold;
+	/* Style for the first item */
+}
+
+.pack-features li.last {
+	font-style: italic;
+	/* Optional, for the last item */
+}
+
+.pack-features::-webkit-scrollbar {
+	width: 10px;
+	/* Adjust the width of the scrollbar */
+}
+
+.pack-features::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	/* Color of the scrollbar track */
+}
+
+.pack-features::-webkit-scrollbar-thumb {
+	background: #888;
+	/* Color of the scrollbar thumb */
+	border-radius: 10px;
+	/* Optional: rounded corners for the thumb */
+}
+
+.pack-features::-webkit-scrollbar-thumb:hover {
+	background: #555;
+	/* Color of the thumb when hovered */
+}
+
+/* ------------ Mobile View: When the screen size is 800px or lower do this: ------------*/
+@media screen and (max-width: 800px) {
+	body {
+		background-image: url("../images/bg-top.svg");
+		background-size: 280px 310px;
+		background-position: 140% 0%;
+		font-size: 3vw;
+	}
+
+	span {
+		font-size: 5vw;
+	}
+
+	.title {
+		padding-top: 2rem;
+	}
+
+	.switch-section {
+		padding: 3rem;
+	}
+
+	.grid-parent {
+		margin-top: 20px;
+		grid-template-columns: repeat(1, 70%);
+		grid-row-gap: 6rem;
+	}
+
+	h4.card-title {
+		margin: 30px 0 15px 0;
+	}
+}
+
+
+.button {
+	background-color: #000000;
+	color: rgb(0, 0, 0);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #ffae00 !important;
+	color: rgb(0, 0, 0) !important;
+}
+
+#hr {
+	border: 1px solid #ddd;
+}
+
+.carousel-indicators .active {
+	background-color: #ffae00 !important
+		/* Active indicator color */
+}
+
+/* Change background of next/previous buttons */
+.carousel-control-next,
+.carousel-control-prev {}
+
+/* Change icon color inside the buttons */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	color: #000000 !important;
+}
+
+#tab-website {
+	background-color: var(--uptownwebsiteylf) !important;
+	color: var(--uptownwebsiteylw) !important;
+	border: 1px solid var(--uptownwebsiteylw) !important;
+}
+
+#tab-website:hover {
+	background-color: var(--uptownwebsiteylw) !important;
+	color: var(--uptownwebsiteylf) !important;
+	border: 1px solid var(--uptownwebsiteylw) !important;
+}
+
+#tab-logo:hover {
+	background-color: var(--uptownwebsiteylf) !important;
+	color: var(--uptownwebsiteylw) !important;
+	border: 1px solid var(--uptownwebsiteylw) !important;
+}
+
+.Pricig {
+	position: relative;
+	/* Ensures the overlay stays within this section */
+	background-image: url('./assets/images/portf-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 40px 0;
+}
+
+
+/*   Call to back */
+.call-i {
+	font-size: 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.call-i i {
+	font-size: 38px;
+	color: var(--uptownwebsitecolor2);
+}
+
+.call-sec {
+	text-align: center;
+	margin: 22px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.call-sec h5 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #888;
+	margin: auto;
+}
+
+.call-sec p {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--uptownwebsitecolor2);
+}
+
+
+/* Progess-container */
+/* Container Styling */
+
+
+#step-title {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-align: start;
+}
+
+#step-description {
+	font-size: 1em;
+	color: #555;
+	text-align: start;
+	margin-bottom: 20px;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+	display: flex !important;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 20px 0;
+	margin: 70px 0;
+}
+
+.line {
+	position: absolute;
+	top: 13%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background-color: var(--uptownwebsiteylw);
+	z-index: 0;
+}
+
+.step {
+	position: relative;
+	font-size: 0.9em;
+	color: #aaa;
+	text-align: center;
+	flex: 1;
+	z-index: 1;
+	padding: 13px 36px;
+	cursor: pointer;
+}
+
+.step::before {
+	content: "";
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	border: 2px solid var(--uptownwebsiteylw);
+	background-color: #fff;
+}
+
+.step.active {
+	color: var(--uptownwebsiteylw);
+}
+
+.step.active::before {
+	background-color: var(--uptownwebsiteylw);
+	/* Fill color for active steps */
+}
+
+#call-row {
+	max-width: 900px;
+}
+
+/* Slider */
+
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients {
+	padding: 12px 0;
+}
+
+.clients .swiper {
+	padding: 10px 0;
+}
+
+.clients .swiper-wrapper {
+	height: auto;
+}
+
+.clients .swiper-slide img {
+	transition: 0.3s;
+	padding: 0 10px;
+}
+
+.clients .swiper-slide img:hover {
+	transform: scale(1.1);
+}
+
+
+/* Testimonial */
+/* Center the entire Testimonial Section */
+.Testimonial-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0; /* Add some padding for spacing */
+  }
+  
+  .testimonial-slider {
+	border: 1px solid #ddd;
+	max-width: 1200px;
+	width: 100% !important; /* Ensure it takes full width up to 1200px */
+	background-color: var(--lght-color);
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto; /* Ensure the slider is centered within its container */
+	text-align: center; /* Center the content inside */
+  }
+  
+  /* Testimonial List and Cards */
+  .testimonial-list {
+	display: flex;
+	overflow: hidden;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  .testimonial {
+	flex: 1 0 100%;
+	text-align: center;
+	padding: 20px;
+	transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .testimonial .bi-quote {
+	font-size: 4rem;
+	color: var(--sunglow);
+	opacity: 0.75;
+  }
+  
+  .testimonial blockquote {
+	font-size: 1.25rem;
+	margin-inline: 20px;
+  }
+  
+  .user-info {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+  }
+  
+  .user-info img {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+  }
+  
+  .user-details {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+  }
+  
+  .user-details .name {
+	font-size: 1.15rem;
+	font-weight: 500;
+	color: var(--uptownwebsiteheading);
+  }
+  
+  .user-details .company {
+	color: var(--muted-color);
+  }
+  
+  /* Button Navigation */
+  .nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 42px;
+	height: 42px;
+	font-size: 1.5rem;
+	border-radius: 50%;
+	background-color: var(--dot-color);
+	color: var(--paynes-gray);
+	transition: 0.3s;
+	opacity: 0;
+  }
+  
+  .testimonial-slider:hover .nav {
+	opacity: 1;
+  }
+  
+  .nav:hover {
+	background-color: var(--uptownwebsiteylw);
+	color: var(--light-color);
+  }
+  
+  .nav.prev {
+	left: 10px;
+  }
+  
+  .nav.next {
+	right: 10px;
+  }
+  
+  /* Dot Navigation */
+  .dots-container {
+	text-align: center;
+  }
+  
+  .dot {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border-radius: 5px;
+	margin-inline: 5px;
+	background-color: var(--dot-color);
+	transition: width 0.5s;
+  }
+  
+  .dot.active {
+	width: 30px;
+	background-color: var(--uptownwebsiteylw);
+  }
+  
+  /* Title Styling */
+  .testimonial-slider h1 {
+	text-align: center;
+	color: var(--uptownwebsiteylw);
+	margin-bottom: 30px; /* Add spacing between title and testimonials */
+  }
+  
+
+
+
+  /*  Forn section */
+
+  /*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+#contact-container{
+	margin: 25px 0;
+}
+.contact .info-wrap {
+	background-color: var(--surface-color);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-top: 3px solid var(--accent-color);
+	border-bottom: 3px solid var(--accent-color);
+	padding: 30px;
+	height: 100%;
+  }
+  
+  @media (max-width: 575px) {
+	.contact .info-wrap {
+	  padding: 20px;
+	}
+  }
+  
+  .contact .info-item {
+	margin-bottom: 40px;
+  }
+  
+  .contact .info-item i {
+	font-size: 20px;
+	color: var(--accent-color);
+	background: color-mix(in srgb, var(--accent-color), transparent 92%);
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+	margin-right: 15px;
+  }
+  
+  .contact .info-item h3 {
+	padding: 0;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	color: var(--uptownwebsiteylw);
+  }
+  
+  .contact .info-item p {
+	padding: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+  }
+  
+  .contact .info-item:hover i {
+	background: var(--accent-color);
+	color: var(--contrast-color);
+  }
+  
+  .contact .php-email-form {
+	background-color: var(--surface-color);
+	height: 100%;
+	padding: 30px;
+	border-top: 3px solid var(--accent-color);
+	border-bottom: 3px solid var(--accent-color);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 575px) {
+	.contact .php-email-form {
+	  padding: 20px;
+	}
+  }
+  
+  .contact .php-email-form input[type=text],
+  .contact .php-email-form input[type=email],
+  .contact .php-email-form textarea {
+	font-size: 14px;
+	padding: 10px 15px;
+	box-shadow: none;
+	border-radius: 0;
+	color: var(--default-color);
+	background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+	border-color: color-mix(in srgb, var(--uptownwebsiteylw), transparent 80%);
+	border: 1px solid var(--uptownwebsiteylw );
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+	  border: 1px solid var(--uptownwebsiteylw );
+  }
+  
+  .contact .php-email-form input[type=text]::placeholder,
+  .contact .php-email-form input[type=email]::placeholder,
+  .contact .php-email-form textarea::placeholder {
+	color: color-mix(in srgb, var(--default-color), transparent 70%);
+  }
+  
+  .contact .php-email-form button[type=submit] {
+	color: var(--contrast-color);
+	background: var(--uptownwebsiteylw);
+	border: 0;
+	padding: 10px 30px;
+	margin: 10px 0;
+	transition: 0.4s;
+	border-radius: 50px;
+  }
+  
+  .contact .php-email-form button[type=submit]:hover {
+	background: var(--uptownwebsiteheading);
+	color: var(--dot-color);
+  }
+
+
+/* / Footer Section */
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+	color: var(--light-color);
+	background-color: var(--uptownwebsiteheading);
+	font-size: 14px;
+	padding-bottom: 50px;
+	position: relative;
+  }
+  
+  .footer .footer-newsletter {
+	background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
+	padding: 50px 0;
+  }
+  
+  .footer .footer-newsletter h4 {
+	font-size: 24px;
+  }
+  
+  .footer .footer-newsletter .newsletter-form {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding: 6px 8px;
+	position: relative;
+	background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+	border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+	box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+	display: flex;
+	transition: 0.3s;
+	border-radius: 50px;
+  }
+  
+  .footer .footer-newsletter .newsletter-form:focus-within {
+	border-color: var(--accent-color);
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=email] {
+	border: 0;
+	padding: 4px;
+	width: 100%;
+	background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+	color: var(--default-color);
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+	outline: none;
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=submit] {
+	border: 0;
+	font-size: 16px;
+	padding: 0 20px;
+	margin: -7px -8px -7px 0;
+	background: var(--accent-color);
+	color: var(--contrast-color);
+	transition: 0.3s;
+	border-radius: 50px;
+  }
+  
+  .footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+	background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  }
+  
+  .footer .footer-top {
+	padding-top: 50px;
+  }
+  
+  .footer .social-links a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid color-mix(in srgb, var(--uptownwebsiteylw), transparent 50%);
+	font-size: 16px;
+	color: color-mix(in srgb, var(--default-color), transparent 20%);
+	margin-right: 10px;
+	transition: 0.3s;
+  }
+  
+  .footer .social-links a:hover {
+	color: var(--accent-color);
+	border-color: var(--uptownwebsiteylw);
+  }
+  
+  .footer h4 {
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: 12px;
+	color: var(--uptownwebsiteylw);
+  }
+  
+  .footer .footer-links {
+	margin-bottom: 30px;
+  }
+  
+  .footer .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .footer .footer-links ul i {
+	margin-right: 3px;
+	font-size: 12px;
+	line-height: 0;
+	color: var(--accent-color);
+  }
+  
+  .footer .footer-links ul li {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+  }
+  
+  .footer .footer-links ul li:first-child {
+	padding-top: 0;
+  }
+  
+  .footer .footer-links ul a {
+	display: inline-block;
+	color: color-mix(in srgb, var(--default-color), transparent 20%);
+	line-height: 1;
+  }
+  
+  .footer .footer-links ul a:hover {
+	color: var(--accent-color);
+  }
+  
+  .footer .footer-about a {
+	color: var(--heading-color);
+	font-size: 28px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: var(--heading-font);
+  }
+  
+  .footer .footer-contact p {
+	margin-bottom: 5px;
+  }
+  
+  .footer .copyright {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+  
+  .footer .copyright p {
+	margin-bottom: 0;
+  }
+  
+  .footer .credits {
+	margin-top: 6px;
+	font-size: 13px;
+  }
+
+
+  @media (max-width: 768px) {
+    .hamburger-menu {
+		display: flex;
+        position: absolute;
+        top: 40px;
+        right: 46px;
+        z-index: 2;
+		/* margin-left: 20%; */
+		justify-content: flex-end;
+		align-items: center;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: -4vh;
+        right: 2px;
+		height: 100vh;
+        background: rgba(14, 14, 14, 0.9);
+        width: 100%;
+        z-index: 1;
+        text-align: center;
+        padding: 20px 0;
+		top:4;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 15px 0;
+    }
+	.logo img{
+		width: 200px;
+        height: 13vh;
+	}
+	.hero-content {
+        top: 45%;
+        transform: translate(0%, -50%);
+        width: 90%;
+    }
+
+	.hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-content h1::after {
+        width: 50%;
+    }
+
+    .hero-content p {        font-size: 16px;
+        width: 91%;
+        margin-left: 42px
+    }
+
+    .hero-content .btn-b {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+	.web-busniess-ul {
+        flex-direction: flex; /* Stacks the buttons vertically */
+        align-items: center;
+		flex-wrap: wrap;
+		gap: 10px;
+    }
+.content{
+    margin: 0 59px;
+}
+.step {
+    font-size: 13px;
+    padding: 13px 6px;
+}
+ 
+.responsive1{
+	width: 100%; /* Make columns take up full width */
+	padding: 10px; /* Add padding around each card */
+}
+
+.card {
+	padding: 20px; /* Reduce padding for smaller screens */
+	box-shadow: 0px 0px 15px -5px hsl(240, 9%, 80%);
+	width: 100%;
+	height: 76vh;
+	border-radius: 38px;
+}
+.card h4{
+	font-size: 42px;
+}
+
+.card-title {
+	font-size: 16px; /* Reduce font size for card titles */
+	text-align: center; /* Center-align titles */
+}
+
+.price {
+	font-size: 20px; /* Adjust price size */
+	text-align: center; /* Center-align price */
+}
+
+.pack-features {
+	max-height: 450px; /* Adjust the height for smaller screens */
+	overflow-y: auto; /* Enable scrolling */
+}
+.pack-features li {
+	
+	font-size: 18px; /* Adjust font size for features list */}
+
+.button {
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	margin: 10px 0;
+}
+span {
+	font-size: 16px;
+}
+.corner-image{
+	display: none;
+}
+}
+
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 37px;
+    }
+
+    
+
+    .hero-content .btn-b {
+        padding: 10px 22px;
+    }
+}
+
+@media (max-width: 390px) {
+	#header{
+		position: fixed;
+	}
+	header{
+		position: absolute;
+	}
+    .menu li {
+        font-size: 15px}
+	.line {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 4px;
+        background-color: var(--uptownwebsiteylw);
+        z-index: 0;
+        transform: rotate(90deg);
+        left: -35px;	}
+	.steps{
+		flex-direction: column;
+
+		
+	}
+	.hero-content p {     
+		   font-size: 16px;
+        width: 91%;
+        margin-left:0
+    }
+	.step::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -1%;
+		transform: translateX(-50%);
+		width: 19px;
+		height: 19px;
+		border-radius: 50%;
+		border: 2px solid var(--uptownwebsiteylw);
+		background-color: #fff;
+	}
+	.step {
+        font-size: 13px;
+        padding: 18px 6px;
+    }
+	.scale{
+		display:block !important;
+
+	}
+	.logo img {
+        width: 55%;
+        height: 9vh;
+    }
+	.corner-image {
+	
+	display: none;}
+	.list{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 428px) {
+	.hamburger-menu{
+		top: 18px;
+        right: 41px;
+	}
+	.header{
+		height: 18vh;
+	}
+.logo img{
+	width: 63%;
+	height: 12vh;
+	margin: 2px 0;
+
+}	
+.hero-content p {
+	font-size: 16px;
+	/* width:0%; */
+	margin-left: 0px;
+}
+.list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.corner-image{
+	display: none;
+}
+.scale1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hamburger-menu {
+	/* top: 0px; */
+}
+#counter-row{
+	margin-left: 0;
+}
+.menu li {
+	font-size: 18px;
+}
+.line {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 4px;
+	background-color: var(--uptownwebsiteylw);
+	z-index: 0;
+	transform: rotate(90deg);
+	left: -35px;	}
+.steps{
+	flex-direction: column;
+
+	
+}
+.hero-content p {     
+	   font-size: 16px;
+	width: 91%;
+	margin-left:0
+}
+.step::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -1%;
+	transform: translateX(-50%);
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	border: 2px solid var(--uptownwebsiteylw);
+	background-color: #fff;
+}
+.step {
+	font-size: 13px;
+	padding: 18px 6px;
+}
+.portfolio-img {
+    height: 300px;
+
+}
+.sec {
+    margin: 50px 0;
+}
+}
+
+
+
+/* Side bar */
+/* Side bar */
+.box {
+    position: absolute;  /* Initially set to absolute */
+}
+
+.box1 {
+    position: absolute;  /* Initially set to absolute */
+    top: 300px;
+    left: -342px;
+    width: 400px;
+    height: 400px;
+    background-color: var(--uptownwebsiteylw);
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.box1.expanded  {
+    position: fixed;  /* Change to relative when clicked */
+    top: 300px;
+    left: 0;
+    width: 400px;  /* Adjust size if needed */
+    height: 400px;
+	background-color: #000000;
+}
+.side-bar-sm-frm.rght-open.openfrm {
+    display: inline-block;
+}
+.side-body {
+    padding: 33px 80px 32px;
+    background: rgb(249, 249, 249);
+    box-shadow: rgba(0, 0, 0, 0.32) 0px 0px 10px 2px;
+    width: 431px;
+}
+.side-head {
+    background: rgb(0, 0, 0);
+    padding: 12px 0px;
+    font-family: "Titillium Web", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    left: -161px;
+    top: 160px;
+    margin: auto;
+    transform: rotate(-90deg);
+    text-align: center;
+    width: 377px;
+    cursor: pointer;
+    height: 56px;
+}
