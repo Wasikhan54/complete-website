@@ -178,7 +178,7 @@ header {
     width: 100%;
     background: #1d1d1de6 !important;
     z-index: 2;
-    height:11vh;
+    height:13vh;
     display: flex;
     align-items: center;
 }
@@ -228,8 +228,8 @@ header {
 
 /* Logo Styling */
 .logo img {
-    width: 63%;
-    height: 10vh;
+    width: 70%;
+    height: 13vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1665,21 +1665,39 @@ span {
 .corner-image{
 	display: none;
 }
+#counter-row {
+    margin-left: 0%;
+}
+body{
+	overflow-x: hidden!important;
+}
 }
 
 @media (max-width: 1024px) {
+	.menu{
+		gap:10px
+	}
     .hero-content h1 {
-        font-size: 37px;
+		font-size: 37px;
     }
-
+	
     
-
+	
     .hero-content .btn-b {
-        padding: 10px 22px;
+		padding: 10px 22px;
     }
+	.corner-image{
+		display: none;
+	}
+.web-busniess-ul {
+flex-wrap: wrap;
+}
 }
 
 @media (max-width: 390px) {
+	body{
+		overflow-x: hidden !important;
+	}
 	#header{
 		position: fixed;
 	}
@@ -1747,11 +1765,12 @@ span {
         right: 41px;
 	}
 	.header{
-		height: 18vh;
+		height: 22vh;
 	}
 .logo img{
-	width: 63%;
-	height: 12vh;
+	padding: 12px 0;
+	width: 73%;
+	height: 19vh;
 	margin: 2px 0;
 
 }	
